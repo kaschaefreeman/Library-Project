@@ -1,3 +1,11 @@
+import {
+  findAccountById,
+  sortAccountsByLastName,
+  getTotalNumberOfBorrows,
+  getBooksPossessedByAccount,
+  bookWithAuthorObj,
+} from "../src/accounts.js";
+
 // Templates
 function accountLinkTemplate(account) {
   return `

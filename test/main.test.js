@@ -1,15 +1,15 @@
-const { expect } = require("chai");
-const {
+import { expect } from "chai";
+import {
   getTotalBooksCount,
   getTotalAccountsCount,
   getBooksBorrowedCount,
   getMostCommonGenres,
   getMostPopularBooks,
   getMostPopularAuthors,
-} = require("../public/src/home.js");
+} from "../public/src/home.js";
 
-const authorsFixture = require("./fixtures/authors.fixture");
-const booksFixture = require("./fixtures/books.fixture");
+import authorsFixture  from "./fixtures/authors.fixture.js";
+import booksFixture from "./fixtures/books.fixture.js";
 
 describe("Home Page", () => {
   let authors;

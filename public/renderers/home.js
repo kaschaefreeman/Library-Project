@@ -1,3 +1,12 @@
+import {
+  getTotalBooksCount,
+  getTotalAccountsCount,
+  getBooksBorrowedCount,
+  getMostCommonGenres,
+  getMostPopularBooks,
+  getMostPopularAuthors,
+} from "../src/home.js";
+
 function renderTotalBooks() {
   const count = getTotalBooksCount(books);
   if (typeof count !== "number") return;

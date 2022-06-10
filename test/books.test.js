@@ -1,14 +1,14 @@
-const { expect } = require("chai");
-const {
+import { expect } from "chai";
+import {
   findAuthorById,
   findBookById,
   partitionBooksByBorrowedStatus,
   getBorrowersForBook,
-} = require("../public/src/books.js");
+} from "../public/src/books.js";
 
-const accountsFixture = require("./fixtures/accounts.fixture");
-const authorsFixture = require("./fixtures/authors.fixture");
-const booksFixture = require("./fixtures/books.fixture");
+import accountsFixture from "./fixtures/accounts.fixture.js";
+import authorsFixture from "./fixtures/authors.fixture.js";
+import booksFixture from "./fixtures/books.fixture.js";
 
 describe("Books Page", () => {
   let accounts;

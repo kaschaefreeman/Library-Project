@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     id: "5f446f2e2f35653fa80bf490",
     picture: "http://placehold.it/32x32",

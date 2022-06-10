@@ -1,4 +1,4 @@
-const {booksByReturnedStatus} = require ("./books");
+import { booksByReturnedStatus } from "./books.js";
 
 /*** --- HELPER FUNCTIONS --- ***/
 
@@ -55,7 +55,7 @@ const countBooksByItem = (books, countItem) => {
   return count;
 };
 
-/*** --- QUALIFIED FUNCTIONS --- ***/
+/*** --- MAIN FUNCTIONS --- ***/
 
 function getTotalBooksCount(books) {
   return books.length;
@@ -119,7 +119,7 @@ function getMostPopularAuthors(books, authors) {
   return results.slice(0, 5);
 }
 
-module.exports = {
+export {
   getTotalBooksCount,
   getTotalAccountsCount,
   getBooksBorrowedCount,

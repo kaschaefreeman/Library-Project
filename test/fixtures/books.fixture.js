@@ -1,4 +1,4 @@
-module.exports = [
+export default [
   {
     id: "5f447132c30e8abe6c988a8b",
     title: "veniam voluptate magna ipsum officia",

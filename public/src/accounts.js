@@ -1,4 +1,4 @@
-const  {findAuthorById} = require("./books.js");
+import  {findAuthorById} from "./books.js";
 
 /*** --- HELPER FUNCTIONS --- ***/
 
@@ -30,7 +30,7 @@ const booksByAccount = (account, books) => {
   );
 };
 
-/*** --- QUALIFIED FUNCTIONS --- ***/
+/*** --- MAIN FUNCTIONS --- ***/
 
 function findAccountById(accounts, id) {
   const results = accounts.find((account) => account.id === id);
@@ -68,7 +68,7 @@ function getBooksPossessedByAccount(account, books, authors) {
   const results = bookWithAuthorObj(booksNotReturned, authors);
   return results;
 }
-module.exports = {
+export {
   findAccountById,
   sortAccountsByLastName,
   getTotalNumberOfBorrows,

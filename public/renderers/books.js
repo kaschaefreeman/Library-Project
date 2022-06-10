@@ -1,3 +1,11 @@
+import {
+  findAuthorById,
+  findBookById,
+  partitionBooksByBorrowedStatus,
+  getBorrowersForBook,
+  booksByReturnedStatus,
+} from "../src/books.js";
+
 // Templates
 function returnedBadgeTemplate(returned) {
   return `

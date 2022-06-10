@@ -25,7 +25,7 @@ const booksByReturnedStatus = (books, testBoolean) => {
   return results;
 };
 
-/*** --- QUALIFIED FUNCTIONS --- ***/
+/*** --- MAIN FUNCTIONS --- ***/
 
 function findAuthorById(authors, id) {
   //filter through authors to find author that matches a given id
@@ -70,10 +70,10 @@ function getBorrowersForBook(book, accounts) {
   return results;
 }
 
-module.exports = {
+export {
   findAuthorById,
   findBookById,
   partitionBooksByBorrowedStatus,
   getBorrowersForBook,
-  booksByReturnedStatus
+  booksByReturnedStatus,
 };
